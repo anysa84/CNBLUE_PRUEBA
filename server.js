@@ -20,10 +20,7 @@ app.use(bodyParser.json());
 
 // Conectar a MongoDB
 mongoose.connect(miURL, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useCreateIndex: true,
-  useFindAndModify: false,
+  useNewUrlParser: true, useUnifiedTopology: true,
 })
 .then(() => console.log("Conectado a MongoDB Atlas"))
 .catch((error) => console.error("Error al conectar con MongoDB Atlas:", error));
