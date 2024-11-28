@@ -4,28 +4,25 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const dotenv = require('dotenv');
 const path = require("path");
-const miURL = process.env.MONGODB_URI;
-
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 dotenv.config();
 
-app.use(express.static(path.join(__dirname,"./public")))
-
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, "./public")));
 
 // Conectar a MongoDB
+const miURL = process.env.MONGODB_URI;
 mongoose.connect(miURL, {
-  useNewUrlParser: true, useUnifiedTopology: true,
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
 })
 .then(() => console.log("Conectado a MongoDB Atlas"))
 .catch((error) => console.error("Error al conectar con MongoDB Atlas:", error));
-
-
 
 // Esquema de Canciones
 const songSchema = new mongoose.Schema({
@@ -58,25 +55,25 @@ app.delete("/songs/:id", async (req, res) => {
 
 // Modelo de usuario
 const userSchema = new mongoose.Schema({
-    nombre: String,
-    apellido: String,
-    apodo: String,
-    email: String,
-    password: String,
+  nombre: String,
+  apellido: String,
+  apodo: String,
+  email: String,
+  password: String,
 });
 
 const User = mongoose.model('User', userSchema);
 
 // Ruta para registrar usuarios
 app.post('/register', async (req, res) => {
-    try {
-        const { nombre, apellido, apodo, email, password } = req.body;
-        const user = new User({ nombre, apellido, apodo, email, password });
-        await user.save();
-        res.status(201).send('Usuario registrado con éxito');
-    } catch (error) {
-        res.status(500).send('Error al registrar el usuario');
-    }
+  try {
+      const { nombre, apellido, apodo, email, password } = req.body;
+      const user = new User({ nombre, apellido, apodo, email, password });
+      await user.save();
+      res.status(201).send('Usuario registrado con éxito');
+  } catch (error) {
+      res.status(500).send('Error al registrar el usuario');
+  }
 });
 
 // Endpoint para verificar login
@@ -94,6 +91,7 @@ app.post('/login', async (req, res) => {
   }
 });
 
+// Inicializar el servidor en el puerto asignado
 app.listen(PORT, () => {
-  console.log(`Servidor corriendo en http://localhost:${PORT}`);
+  console.log(`Servidor corriendo en el puerto ${PORT}`);
 });
