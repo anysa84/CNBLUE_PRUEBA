@@ -1,0 +1,159 @@
+.protest-guerrilla-regular {
+  font-family: "Protest Guerrilla", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bungee-hairline-regular {
+  font-family: "Bungee Hairline", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sofadi-one-regular {
+  font-family: "Sofadi One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bungee-regular {
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bungee-regular {
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.bungee-inline-regular {
+  font-family: "Bungee Inline", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #b525e0;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(236, 236, 236);
+
+}
+
+a {
+  color: hsl(220, 23%, 97%);
+  font-family: "Bungee", sans-serif;
+
+}
+
+nav {
+    width: 100%;
+    background-color: #000000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+  button {
+    display: flex;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid hsl(0, 33%, 92%);
+    border-radius: 5px;
+    background-color: rgb(215, 56, 236);
+    margin-left: 50%;
+    max-width: fit-content;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color:black;
+    
+  }
+  
+  input[type="number"]{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color:black;
+  }
+  
+  
+  input[type="url" ]{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color:black
+  }
+  
+  
+  
+  
+  input[type="password"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color:black
+  }
+  
+  input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color:black
+    
+    
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  table, th, td {
+    border: 1px solid black;
+  }
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+
+
+  

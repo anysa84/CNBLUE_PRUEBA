@@ -1,0 +1,325 @@
+.protest-guerrilla-regular {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bungee-hairline-regular {
+    font-family: "Bungee Hairline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sofadi-one-regular {
+    font-family: "Sofadi One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bungee-regular {
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bungee-regular {
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.bungee-inline-regular {
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+a {
+    color: hsl(220, 23%, 97%);
+    font-family: "Bungee", sans-serif;
+
+}
+
+p {
+    font-family: "Bungee", sans-serif;
+    color: #04275f;
+    align-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+.Titulo {
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #0000b9;
+    font-size: 80px;
+    animation: bounce 2s infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    margin-bottom: 30px;
+
+}
+
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-30px);
+    }
+
+}
+
+
+
+
+h2 {
+
+
+    color: hwb(231 5% 25% / 0.952);
+    font-size: x-large;
+    font-weight: 500px;
+    font-family: "Bungee", sans-serif;
+    text-align: center;
+    margin: auto;
+}
+
+/* .Canciones {
+    
+    color: hwb(231 5% 25% / 0.952);
+    font-size: x-large;
+    font-weight: 500px;
+    font-family:"Bungee", sans-serif;
+    text-align: center;
+    margin: auto;
+}*/
+
+body {
+
+    margin: 0;
+    background-color: #b525e0;
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 500px;
+    font-style: normal;
+
+
+  
+    flex-direction: column;
+    justify-content: center;
+    margin-inline: 10px;
+    display: flex;
+  justify-content: center;
+    align-content:  center;
+       /*   */
+}
+
+
+
+
+.LOVE {
+
+    margin: 10px;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.CANT {
+    color: hsl(0, 0%, 100%);
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.RING {
+    color: hsl(0, 0%, 100%);
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Foto {
+    display: flex;
+    justify-content: center;
+
+}
+
+/*  
+
+   
+ */
+
+button {
+    display: flex;
+    background-color: hsla(152, 85%, 42%, 0);
+    border: #04275f;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: auto;
+    padding: 10px;
+    font-size: 16px;
+    justify-content: center;
+    align-content: center;
+
+
+
+
+}
+
+
+img {
+
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+
+.corazon {
+    display: flex;
+
+    background: none;
+    border: none;
+    color: #ecb3b3;
+    font-size: 34px;
+    cursor: pointer;
+    position: relative;
+    top: -330px;
+    left: 140px;
+    border-bottom: #b525e0;
+
+
+}
+
+.corazon.liked {
+    color: red;
+}
+
+
+
+
+
+
+
+.Eventos {
+    display: flex;
+    padding: 10px;
+    width: 50px;
+
+    border: 2px solid hsla(0, 0%, 100%, 0.942);
+    border-radius: 5px;
+    background-color: hsl(293, 94%, 49%);
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: center;
+    align-content: center;
+   
+}
+
+.Contenedor {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 10%;
+
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 500px;
+    font-style: normal;
+    position: relative;
+    align-content: center;
+
+
+}
+
+
+nav {
+    width: 100%;
+    background-color: #000000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+/*
+    * button {
+    
+
+
+  }
+
+   background-color: #f55959;
+
+.corazon1{
+    border-bottom: 50%;
+    background-color: hsl(300, 20%, 98%);
+    position: relative;
+    bottom: 50px;  /* pocicion */
+
+/*
+}
+
+.corazon2{
+    border-bottom: 50%;
+    position: relative;
+    position: absolute;
+    bottom: 50px;           /*pocicion  */
+/* background-color: hsl(300, 20%, 98%);
+    
+}
+
+.corazon3{
+    border-bottom: 50%;
+   position: relative;   
+   bottom: 00px;/* pocicion */
+/*  background-color: hsl(300, 20%, 98%);
+    */
+/*
+}
+/* 
+    
+   bottom: 1000px;
+   background-color: rgba(235, 58, 58, 0);
+    width: 250px;  Ajusta el tamaño
+    height: 150px;     */
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Lista de Canciones</title>
+  <link rel="stylesheet" href="./styles/cancionStyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Hairline&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <nav> 
+    <ul> 
+      <li><a href="./index.html">Principal</a></li>  
+      <li><a href="./Canciones.html">Albums</a></li> 
+      <li><a href="./iniciarSesion.html">Iniciar Sesion</a></li> 
+        <li><a href="./Registro.html">Registrarse</a></li>
+        <li><a href="./Eventos.html">Eventos</a></li> 
+    </ul>
+
+</nav>
+  <h1>Mi Lista de Canciones</h1>
+  <form id="songForm">
+    <label for="id">ID:</label>
+    <input type="text" id="id" name="id" required>
+
+    <label for="title">Título:</label>
+    <input type="text" id="title" name="title" required>
+
+    <label for="album">Nombre del Disco:</label>
+    <input type="text" id="album" name="album" required>
+
+    <label for="year">Año de Lanzamiento:</label>
+    <input type="number" id="year" name="year" required>
+
+    <label for="coverUrl">URL de Carátula:</label>
+    <input type="url" id="coverUrl" name="coverUrl">
+
+    <label for="youtubeUrl">URL de YouTube:</label>
+    <input type="url" id="youtubeUrl" name="youtubeUrl">
+
+    <button type="submit">Guardar</button>
+  </form>
+
+  <h2>Listado de Canciones</h2>
+  <table border="1" id="songsTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Título</th>
+        <th>Disco</th>
+        <th>Año</th>
+        <th>Carátula</th>
+        <th>Youtube</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Aquí se mostrarán las canciones -->
+    </tbody>
+  </table>
+
+  <script src="./javaScript/cargaCanciones.js"></script>
+</body>
+</html>
