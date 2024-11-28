@@ -4,12 +4,11 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const dotenv = require('dotenv');
 const path = require("path");
-const miURL = "mongodb+srv://magnus87:root1234@intro.tuyod.mongodb.net/canciones?retryWrites=true&w=majority&appName=intro";
-//mongodb+srv://Anahi:<db_password>@intro.tuyod.mongodb.net/?retryWrites=true&w=majority&appName=intro
-//mongodb+srv://<username>:<password>@cluster0.mongodb.net/canciones?retryWrites=true&w=majority
+const miURL = process.env.MONGODB_URI;
+
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 dotenv.config();
 
@@ -21,11 +20,14 @@ app.use(bodyParser.json());
 
 // Conectar a MongoDB
 mongoose.connect(miURL, {
-  //useNewUrlParser: true,
+  useNewUrlParser: true,
   useUnifiedTopology: true,
+  useCreateIndex: true,
+  useFindAndModify: false,
 })
 .then(() => console.log("Conectado a MongoDB Atlas"))
 .catch((error) => console.error("Error al conectar con MongoDB Atlas:", error));
+
 
 
 // Esquema de Canciones
