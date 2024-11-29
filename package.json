@@ -1,21 +1,15 @@
 {
-  "name": "crudblue",
+  "name": "crud-canciones",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.20.3",
+    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
-    "crudblue": "file:",
-    "dotenv": "^16.4.5",
-    "express": "^4.21.1",
-    "mongodb": "^6.11.0",
-    "mongoose": "^8.8.2"
-  },
-  "description": ""
+    "crud-canciones": "file:",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.9"
+  }
 }
