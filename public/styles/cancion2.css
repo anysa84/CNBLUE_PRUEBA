@@ -1,0 +1,156 @@
+/*Importaciones */
+.protest-guerrilla-regular {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.bungee-hairline-regular {
+    font-family: "Bungee Hairline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.sofadi-one-regular {
+    font-family: "Sofadi One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.bungee-regular {
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.bungee-regular {
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/*Body y otros elementos */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #b525e0;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(236, 236, 236);
+  }
+
+
+
+/*Barra de Navegacion*/
+
+nav {
+    width: 100%;
+    background-color: #000000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+
+/*Lo que se hizo para las tarjetas y el formulario*/
+/* styles.css */
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input, button {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: rgb(215, 56, 236);
+    color: white;
+    border: 1px solid hsl(0, 33%, 92%);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #tarjetasCanciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .tarjeta {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: calc(33% - 20px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center; /* Centrar el texto */
+  }
+  
+  .tarjeta img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+  }
+  
+  .tarjeta a {
+    color: #1a0dab;
+    text-decoration: none;
+  }
+  
+  .tarjeta a:hover {
+    text-decoration: underline;
+  }
+  
+  .tarjeta .acciones {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .tarjeta h2 {
+    background-color: #d4edda; /* Fondo verde */
+    color: #155724; /* Texto verde oscuro */
+    padding: 10px;
+    margin: -10px -10px 10px -10px; /* Para que ocupe el ancho completo de la tarjeta */
+  }
+  
+  @media (max-width: 768px) {
+    .tarjeta {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .tarjeta {
+      width: 100%;
+    }
+  }
+  
