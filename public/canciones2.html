@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD Canciones</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script defer src="./javaScript/cancionero.js"></script>
+  <link rel="stylesheet" href="./styles/cancion2.css">
+</head>
+<body>
+
+    <nav> 
+        <ul> 
+          <li><a href="./index.html">Principal</a></li>  
+          <li><a href="./Canciones.html">Albums</a></li> 
+          <li><a href="./iniciarSesion.html">Iniciar Sesion</a></li> 
+            <li><a href="./Registro.html">Registrarse</a></li>
+            <li><a href="./Eventos.html">Eventos</a></li> 
+        </ul>
+    
+    </nav>
+    
+  <h1>CRUD de Canciones</h1>
+  <form id="formCancion">
+    <input type="text" id="titulo" placeholder="Título" required>
+    <input type="text" id="album" placeholder="Álbum" required>
+    <input type="number" id="año" placeholder="Año" required>
+    <input type="url" id="urlPortada" placeholder="URL de la Portada" required>
+    <input type="url" id="urlYoutube" placeholder="URL de YouTube" required>
+    <button type="submit">Añadir Canción</button>
+  </form>
+  <div id="tarjetasCanciones"></div>
+</body>
+</html>
