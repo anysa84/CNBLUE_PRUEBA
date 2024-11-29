@@ -3,6 +3,9 @@ const botonSubmit = form.querySelector('button[type="submit"]');
 const tarjetasCanciones = document.getElementById('tarjetasCanciones');
 let editandoID = null;
 
+// Definir la URL base según el entorno
+const baseURL = window.location.hostname === 'localhost' ? 'http://localhost:5000' : 'https://cnblue-prueba.onrender.com';
+
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
 
@@ -15,14 +18,12 @@ form.addEventListener('submit', async (e) => {
   };
 
   if (editandoID) {
-    // Modo de edición: actualizar la canción existente
-    const res = await axios.put(`http://localhost:5000/canciones/${editandoID}`, cancion);
+    const res = await axios.put(`${baseURL}/canciones/${editandoID}`, cancion);
     actualizarTarjeta(res.data);
     editandoID = null;
     botonSubmit.textContent = "Añadir Canción";
   } else {
-    // Modo de adición: crear una nueva canción
-    const res = await axios.post('http://localhost:5000/canciones', cancion);
+    const res = await axios.post(`${baseURL}/canciones`, cancion);
     agregarTarjeta(res.data);
   }
 
@@ -30,7 +31,7 @@ form.addEventListener('submit', async (e) => {
 });
 
 async function cargarCanciones() {
-  const res = await axios.get('http://localhost:5000/canciones');
+  const res = await axios.get(`${baseURL}/canciones`);
   res.data.forEach(cancion => agregarTarjeta(cancion));
 }
 
@@ -65,7 +66,7 @@ function actualizarTarjeta(cancion) {
 }
 
 async function eliminarCancion(id) {
-  await axios.delete(`http://localhost:5000/canciones/${id}`);
+  await axios.delete(`${baseURL}/canciones/${id}`);
   document.querySelector(`[data-id='${id}']`).remove();
 }
 
